@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Gastos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Registro de Gastos</h1>
+    <form id="gastosForm">
+        <label for="valor">Valor:</label>
+        <input type="text" id="valor" required>
+
+        <label for="categoria">Categoria:</label>
+        <input type="text" id="categoria" required>
+
+        <button type="submit">Adicionar Gasto</button>
+    </form>
+
+    <h2>Gastos Registrados</h2>
+    <ul id="listaGastos"></ul>
+
+    <h3>Total Gasto: R$ <span id="totalGasto">0.00</span></h3>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
